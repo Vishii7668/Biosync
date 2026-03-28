@@ -47,36 +47,6 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 | ML | scikit-learn + NumPy | Explainable, lightweight |
 | Routing | React Router v6 | Declarative SPA routing |
 
----
-
-## ⚡ Setup Instructions
-
-### Prerequisites
-- macOS (with internet connection)
-- Git (already installed)
-
-### 1. Clone the repo
-```bash
-git clone <your-repo-url>
-cd biosync
-```
-
-### 2. Run setup (installs Python, Node, all dependencies)
-```bash
-chmod +x setup.sh start.sh
-./setup.sh
-```
-
-### 3. Start the app
-```bash
-./start.sh
-```
-
-### 4. Open in browser
-- **App:** http://localhost:5173
-- **API Docs:** http://localhost:8000/docs
-
----
 
 ## 📁 Project Structure
 
@@ -201,18 +171,18 @@ else:               direction = "stable"
 
 | Member | Component | Responsibility |
 |--------|-----------|---------------|
-| Member 1 | Frontend Lead | Dashboard, charts, ScoreRing |
-| Member 2 | Frontend | LogEntry form, auth pages, API integration |
-| Member 3 | Backend | FastAPI endpoints, JWT auth |
-| Member 4 | ML Engineer | engine.py — trend prediction + risk scorer |
-| Member 5 | Fullstack | DB schema, health router, README, DevOps |
+| Vishesh Maurya | Frontend Lead | Dashboard, charts, ScoreRing |
+| m2| Frontend | LogEntry form, auth pages, API integration |
+| m3| Backend | FastAPI endpoints, JWT auth |
+|m4| ML Engineer | engine.py — trend prediction + risk scorer |
+| M5 | Fullstack | DB schema, health router, README, DevOps |
 
 ---
 
 ## 🏛️ Key Design Decisions (ADR)
 
 **ADR-001: SQLite over PostgreSQL**
-Using SQLite for zero-config local development. The SQLAlchemy ORM makes swapping to PostgreSQL a single env-var change (`DATABASE_URL`).
+Using SQLite for zero-config local development. The SQLAlchemy ORM makes swapping to PostgreSQL a single env-var change
 
 **ADR-002: Linear Regression over Deep Learning**
 With 7–14 data points, deep learning would overfit. Linear regression is interpretable, fast, requires no training data splits, and its slope coefficient is directly explainable to evaluators.
@@ -228,13 +198,3 @@ Frontend proxies `/api` to `:8000`. No CORS configuration needed in development 
 
 ---
 
-## ✅ Must-Have Checklist
-
-- [x] Working end-to-end system
-- [x] Clear separation of components (frontend / backend / DB / ML)
-- [x] Functional APIs with error handling
-- [x] Secure user authentication (JWT + bcrypt)
-- [x] Time-series data handling (activity_logs indexed by date)
-- [x] Data visualization (Recharts area + composed charts)
-- [x] ML meaningfully integrated (not decorative)
-- [x] Privacy: passwords hashed, JWT auth, user-scoped queries
