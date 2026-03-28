@@ -1,6 +1,6 @@
 # 🧬 BioSync — Personal Health Intelligence System
 
-> HBTU Campus Drive · Problem Statement: STOCKHOLM · Ampcus Cyber
+>  Problem Statement: (STOCKHOLM) · Ampcus Cyber
 
 BioSync is a full-stack Personal Health Intelligence System where users log daily activities (sleep, steps, meals, hydration) and receive AI-powered health insights, trend forecasts, and risk assessments.
 
@@ -171,7 +171,7 @@ else:               direction = "stable"
 
 | Member | Component | Responsibility |
 |--------|-----------|---------------|
-| Vishesh Maurya | Frontend Lead | Dashboard, charts, ScoreRing |
+| m1 | Frontend Lead | Dashboard, charts, ScoreRing |
 | m2| Frontend | LogEntry form, auth pages, API integration |
 | m3| Backend | FastAPI endpoints, JWT auth |
 |m4| ML Engineer | engine.py — trend prediction + risk scorer |
