@@ -1,4 +1,4 @@
-# 🧬 BioSync — Personal Health Intelligence System
+#  BioSync — Personal Health Intelligence System
 
 >  Problem Statement: (STOCKHOLM) · Ampcus Cyber
 
@@ -6,9 +6,7 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 
 ---
 
-## 🏗️ Architecture
-
-```
+##  Architecture
 ┌─────────────────────────────────────────────────────────────┐
 │                    User (Browser)                           │
 └──────────────────────────┬──────────────────────────────────┘
@@ -91,7 +89,7 @@ biosync/
 
 ---
 
-## 🔌 API Documentation
+##  API Documentation
 
 ### Auth
 | Method | Endpoint | Description |
@@ -120,7 +118,7 @@ biosync/
 
 ---
 
-## 🤖 ML Implementation
+##  ML Implementation
 
 ### 1. Weighted Risk Scoring Model
 
@@ -167,7 +165,7 @@ else:               direction = "stable"
 
 ---
 
-## 👥 Team Roles
+##  Team Roles
 
 | Member | Component | Responsibility |
 |--------|-----------|---------------|
@@ -179,7 +177,7 @@ else:               direction = "stable"
 
 ---
 
-## 🏛️ Key Design Decisions (ADR)
+##  Key Design Decisions (ADR)
 
 **ADR-001: SQLite over PostgreSQL**
 Using SQLite for zero-config local development. The SQLAlchemy ORM makes swapping to PostgreSQL a single env-var change
