@@ -30,7 +30,7 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 │  activity_logs      │    │  • Weighted Risk Scorer         │
 │  health_scores      │    │  • Sub-metric scoring (0-100)   │
 └─────────────────────┘    └─────────────────────────────────┘
-<img width="800" height="1400" alt="47c554ee-65d2-438e-8f6a-8ce18bb3cfc0" src="https://github.com/user-attachments/assets/d2385035-5178-4053-b71d-11e0dbf7d520" />
+<img width="500" height="1000" alt="47c554ee-65d2-438e-8f6a-8ce18bb3cfc0" src="https://github.com/user-attachments/assets/d2385035-5178-4053-b71d-11e0dbf7d520" />
 
 ## 🛠️ Tech Stack
 
