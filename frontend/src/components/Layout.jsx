@@ -1,12 +1,14 @@
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { LayoutDashboard, PlusCircle, TrendingUp, ShieldAlert, LogOut, Activity } from 'lucide-react'
+import { ..., Utensils } from 'lucide-react'
 
 const nav = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/log', icon: PlusCircle, label: 'Log Today' },
   { to: '/trends', icon: TrendingUp, label: 'Trends & Forecast' },
   { to: '/risk', icon: ShieldAlert, label: 'Risk Report' },
+  { to: '/food', icon: Utensils, label: 'Food Classifier' },
 ]
 
 export default function Layout() {
