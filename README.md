@@ -1,3 +1,4 @@
+
 #  BioSync — Personal Health Intelligence System
 
 >  Problem Statement: (STOCKHOLM) · Ampcus Cyber
@@ -195,4 +196,6 @@ No server-side session storage. Token is stored in localStorage and sent as Bear
 Frontend proxies `/api` to `:8000`. No CORS configuration needed in development beyond a single Vite config line.
 
 ---
-
+<img width="916" height="666" alt="Screenshot 2026-03-31 at 7 06 53 PM" src="https://github.com/user-attachments/assets/fd673621-b99b-478e-a7bd-d277f26e4693" />
+<img width="1177" height="428" alt="Screenshot 2026-03-31 at 7 07 02 PM" src="https://github.com/user-attachments/assets/ed5278ab-9cde-4b6f-b3e9-8903647de8fb" />
+<img width="1168" height="663" alt="Screenshot 2026-03-31 at 7 07 10 PM" src="https://github.com/user-attachments/assets/b9910f39-71af-4cb3-bb81-848926714038" />
