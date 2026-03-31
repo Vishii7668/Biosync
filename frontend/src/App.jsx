@@ -7,6 +7,7 @@ import LogEntry from './pages/LogEntry'
 import Trends from './pages/Trends'
 import RiskReport from './pages/RiskReport'
 import Layout from './components/Layout'
+import FoodClassifier from './pages/FoodClassifier' 
 
 function Protected({ children }) {
   const { user } = useAuth()
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="log" element={<LogEntry />} />
             <Route path="trends" element={<Trends />} />
             <Route path="risk" element={<RiskReport />} />
+            <Route path="food" element={<FoodClassifier />} />
           </Route>
         </Routes>
       </BrowserRouter>
