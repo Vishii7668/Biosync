@@ -30,9 +30,7 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 │  activity_logs      │    │  • Weighted Risk Scorer         │
 │  health_scores      │    │  • Sub-metric scoring (0-100)   │
 └─────────────────────┘    └─────────────────────────────────┘
-```
-
----
+<img width="1024" height="1536" alt="47c554ee-65d2-438e-8f6a-8ce18bb3cfc0" src="https://github.com/user-attachments/assets/d2385035-5178-4053-b71d-11e0dbf7d520" />
 
 ## 🛠️ Tech Stack
 
@@ -50,7 +48,6 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 
 ## 📁 Project Structure
 
-```
 biosync/
 ├── backend/
 │   ├── main.py                  # FastAPI app entry point
@@ -87,13 +84,13 @@ biosync/
 ├── setup.sh                     # One-shot install
 ├── start.sh                     # Start both servers
 └── README.md
-```
+
 
 ---
 
-##  API Documentation
+### API Documentation
 
-### Auth
+# Auth
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/auth/register` | Register new user |
@@ -126,7 +123,7 @@ biosync/
 
 Each metric is scored 0–100 against evidence-based targets:
 
-```python
+python
 # Scoring functions (app/ml/engine.py)
 sleep_score    = f(hours)     # 100 if 7–9h, degrades outside range
 steps_score    = min(100, steps / 10000 * 100)
@@ -140,7 +137,6 @@ overall = (
   nutrition_score * 0.20 +
   hydration_score * 0.15
 )
-```
 
 Risk level mapping: `≥80 = Low`, `≥60 = Moderate`, `≥40 = Elevated`, `<40 = High`
 
@@ -150,7 +146,7 @@ Risk level mapping: `≥80 = Low`, `≥60 = Moderate`, `≥40 = Elevated`, `<40 
 
 ### 2. Time-Series Trend Prediction (Linear Regression)
 
-```python
+python
 # app/ml/engine.py → predict_trend()
 model = LinearRegression()
 model.fit(X_day_indices, y_metric_values)
@@ -161,7 +157,7 @@ forecast = model.predict(future_indices)
 if slope > 0.05:   direction = "improving"
 elif slope < -0.05: direction = "declining"
 else:               direction = "stable"
-```
+
 
 **Input:** Last 14 days of logs. **Output:** Historical + 3-day forecast with slope. **Failure cases:** < 3 data points returns empty forecast with `insufficient_data` direction.
 
