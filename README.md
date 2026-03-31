@@ -47,6 +47,7 @@ BioSync is a full-stack Personal Health Intelligence System where users log dail
 
 
 ## 📁 Project Structure
+<img width="874" height="588" alt="Screenshot 2026-03-31 at 7 19 42 PM" src="https://github.com/user-attachments/assets/7a3d17f2-25e2-4324-93b9-d6b65b0eece9" />
 
 biosync/
 ├── backend/
